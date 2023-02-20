@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:google_mlkit_flutter/NlpApis.dart';
-import 'package:google_mlkit_flutter/visionapis.dart';
+import 'package:google_mlkit_flutter/tabs/NlpApis.dart';
+import 'package:google_mlkit_flutter/tabs/visionapis.dart';
+import 'package:google_mlkit_flutter/tabs/customapis.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 2,
+        length: 3,
         child: Scaffold(
           appBar: AppBar(
             title: Text(" G O O G L E   M L   K I T"),
@@ -21,6 +22,9 @@ class HomePage extends StatelessWidget {
                   ),
                   Tab(
                     icon: Icon(Icons.translate, color: Colors.blue),
+                  ),
+                  Tab(
+                    icon: Icon(Icons.brush, color: Colors.blue),
                   )
                 ],
               ),
@@ -32,6 +36,9 @@ class HomePage extends StatelessWidget {
                     ),
                     Container(
                       child: nlpapis(),
+                    ),
+                    Container(
+                      child: customapis(),
                     )
                   ],
                 ),
