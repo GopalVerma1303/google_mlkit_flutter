@@ -4,7 +4,8 @@ class nlpapis extends StatelessWidget {
   List<String> itemsList = [
     "Language Identification",
     "Smart Reply",
-    "On-device Translation"
+    "On-device Translation",
+    "Entity Extraction"
   ];
   @override
   Widget build(BuildContext context) {

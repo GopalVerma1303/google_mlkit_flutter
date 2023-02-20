@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_mlkit_flutter/tabs/NlpApis.dart';
-import 'package:google_mlkit_flutter/tabs/visionapis.dart';
-import 'package:google_mlkit_flutter/tabs/customapis.dart';
+import 'package:google_mlkit_flutter/tabs/NLPAPIs.dart';
+import 'package:google_mlkit_flutter/tabs/VisionAPIs.dart';
+import 'package:google_mlkit_flutter/tabs/CustomeAPIs.dart';
 
 class HomePage extends StatelessWidget {
   @override
